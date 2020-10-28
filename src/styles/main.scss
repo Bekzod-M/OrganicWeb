@@ -6,10 +6,65 @@
 @import "base/general";
 @import "../blocks/modules";
 
-body{
-  font-family: 'Jost', sans-serif;
+:root {
+  font-size: 16px;
 }
 
-h2{
+body {
+  font-family: 'Jost', sans-serif;
+  color: $gray;
+}
+
+.title {
   font-family: 'Cormorant', serif;
+  font-size: 5rem;
+  line-height: 1;
+
+  span {
+    font-style: italic;
+  }
+}
+
+.btn {
+  display: inline-block;
+  color: $white;
+  background-color: $orange;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.46rem 2.68rem;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 11.2px 1.8px rgba(207, 92, 13, 0.2);
+  letter-spacing: 0.075rem;
+}
+
+.ml {
+  margin-left: 7.5rem;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section-main {
+  background-image: url(../img/bg1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-text {
+    flex: 0 0 40%;
+
+    &__desc {
+      font-size: 1.12rem;
+      line-height: 1.5;
+      margin: 60px 0 56px 0;
+    }
+  }
 }
