@@ -263,11 +263,11 @@ body {
   }
 
   &-noodles {
-    background-image: url(../img/noodles.png);
+    background-image: url(../img/stock/noodles.png);
   }
 
   &-steaks {
-    background-image: url(../img/steaks.png);
+    background-image: url(../img/stock/steaks.png);
   }
 
   &-text {
@@ -370,6 +370,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-bottom: 135px;
 }
 
 .box-advantage {
@@ -377,7 +378,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 67px;
-  &-item{
+
+  &-item {
     flex: 0 0 49%;
   }
 
@@ -432,6 +434,131 @@ body {
     span {
       background-size: 40px 40px;
       background-image: url(../img/taste.svg);
+    }
+  }
+}
+
+// Секция наши новинки
+.section-news {
+  background-image: url(../img/bg4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 60px;
+
+  &__text {
+    margin-top: 2.73rem;
+    font-size: 1.5rem;
+  }
+}
+
+.slider-news {
+  margin-top: 5.06rem;
+
+  &-item {
+    border: 1px solid rgba(39, 48, 15, 0.4);
+    border-radius: 20px;
+    min-height: 685px;
+    position: relative;
+    padding: 2.75rem 2.35rem;
+    box-sizing: border-box;
+
+    &:hover {
+      box-shadow: 0 0 0 2px rgba(39, 48, 15, 0.4);
+    }
+  }
+
+  &-img {
+    position: relative;
+    width: 100%;
+    height: 314px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+  }
+
+  &-text {
+
+    &__title {
+      font-size: 1.87rem;
+      font-weight: 700;
+      font-family: 'Cormorant', serif;
+      color: #27300f;
+      margin-bottom: 25px;
+    }
+
+    &__desc {
+      max-width: 67%;
+      line-height: 1.5;
+      color: rgba(39, 48, 15, 0.7);
+      margin-bottom: 32px;
+      min-height: 48px;
+    }
+
+    &__price {
+      font-size: 24px;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+
+  &-count {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+
+    &__minus,
+    &__plus {
+      display: block;
+      width: 3.12rem;
+      height: 3.12rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      opacity: 0.4;
+      transition: opacity 0.2s ease-in;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &__number {
+      border: none;
+      width: 40px;
+      text-align: center;
+      margin: 0 5px;
+    }
+
+    &__minus {
+      background-image: url(../img/minus.svg);
+    }
+
+    &__plus {
+      background-image: url(../img/plus.svg);
+    }
+  }
+
+  &__btn {
+    padding: 1.4rem 3.2rem;
+    cursor: pointer;
+    border: none;
+
+    &:focus {
+      outline: none;
     }
   }
 }
