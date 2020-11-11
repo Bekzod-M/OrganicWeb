@@ -43,6 +43,7 @@
           <div class="ml">
             <p class="main-text__desc">Сеть магазинов полезных продуктов питания, производство которых основано на
               принципах и&nbsp;стандартах органического чистых продуктов</p>
+            <img class="main-text__image" src="../img/image-main.png" alt="image">
             <a class="btn" href="">Перейти в каталог</a>
           </div>
         </div>
@@ -529,7 +530,8 @@
               <input class="form__input" type="text" placeholder="Ваш телефон">
             </div>
             <button class="form__btn btn">Заказать звонок</button>
-            <p class="form__text">Нажимая на кнопку вы подтверждаете свое согласие на обработку <a class="form__link" href="">персональных данных</a>.</p>
+            <p class="form__text">Нажимая на кнопку вы подтверждаете свое согласие на обработку <a class="form__link"
+                href="">персональных данных</a>.</p>
           </form>
         </div>
       </div>
@@ -544,14 +546,17 @@
     $('.slider').slick({
       dots: false,
       infinite: true,
+      arrows: true,
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [{
-          breakpoint: 600,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 2,
+            arrows: false,
+            dots: true,
           }
         },
         {
